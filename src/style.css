@@ -1,3 +1,23 @@
+
 body {
-    background-color: rgb(2, 91, 97);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+#app {
+  display: flex;
+  height: 100vh;
+}
+
+#projects {
+  width: 200px;
+  background: rgb(2, 91, 97);
+  padding: 1rem;
+}
+
+#todos {
+  flex: 1;
+  padding: 1rem;
 }
