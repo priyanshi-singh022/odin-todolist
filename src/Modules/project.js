@@ -12,6 +12,10 @@ class Project {
     removeTodo(todoId) {
         this.todos = this.todos.filter(todo => todo.id !== todoId);
     }
+
+    getTodoById(id) {
+        return this.todos.find(todo => todo.id === id);
+    }
 }
 
 export default Project;   

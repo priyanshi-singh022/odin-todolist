@@ -15,9 +15,52 @@ body {
   width: 200px;
   background: rgb(2, 91, 97);
   padding: 1rem;
+  border-right: 1px solid #ccc;
+  color: white;
+}
+
+#projects div {
+  padding: 5px;
+  cursor: pointer;
+}
+
+#projects div.active {
+  color: #16c1d8;
+  font-weight: bold;
 }
 
 #todos {
   flex: 1;
   padding: 1rem;
+}
+
+.todo-item {
+  border: 1px solid #ccc;
+  padding: 8px;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+
+.todo-item.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+button {
+  margin: 5px 0;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+/* Priority colors */
+.priority-low {
+  border-left: 6px solid green;
+}
+
+.priority-medium {
+  border-left: 6px solid orange;
+}
+
+.priority-high {
+  border-left: 6px solid red;
 }
